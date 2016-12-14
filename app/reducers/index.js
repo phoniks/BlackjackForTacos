@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
 import user from 'reducers/user';
 import topic from 'reducers/topic';
+import players from 'reducers/players'
+import deck from 'reducers/deck'
 import message from 'reducers/message';
 import { routerReducer as routing } from 'react-router-redux';
 import * as types from 'types';
@@ -24,7 +26,9 @@ const rootReducer = combineReducers({
   topic,
   user,
   message,
-  routing
+  routing,
+  players,
+  deck
 });
 
 export default rootReducer;

@@ -1,12 +1,13 @@
 import React, { Component, PropTypes } from 'react';
 import Page from 'pages/Page';
-import VoteContainer from 'containers/Vote';
+import GameContainer from 'containers/Game';
 
-class Vote extends Component {
+class Play extends Component {
   render() {
+    console.log('::play props::', this.props);
     return (
       <Page {...this.getMetaData()}>
-        <VoteContainer {...this.props} />
+        <GameContainer {...this.props} />
       </Page>
     );
   }
@@ -34,5 +35,4 @@ class Vote extends Component {
   }
 }
 
-export default Vote;
-
+export default Play;

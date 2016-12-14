@@ -29,8 +29,9 @@ export default function render(req, res) {
       isLogin: true
     }
   }, history);
-  const routes = createRoutes(store);
 
+  const routes = createRoutes(store);
+  console.log(store);
   /*
    * From the react-router docs:
    *
